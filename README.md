@@ -1,1 +1,1 @@
-# tiny-projects-in-c
+# Algorithms in C

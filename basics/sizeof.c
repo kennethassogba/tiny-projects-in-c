@@ -1,3 +1,5 @@
+// gcc -Wall sizeof.c -o sizeof.exe
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,13 +14,13 @@ int main()
 	double d = 10.0;
 
 	printf("!!!hello la classe preparatoire!!!\n");
-	printf("\tchar: sizeof %d\n", sizeof(char));
-	printf("\tint: sizeof %d\n", sizeof(int));
-	printf("\tshort: sizeof %d\n", sizeof(short));
-	printf("\tlong: sizeof %d\n", sizeof(long));
-	printf("\tlong long: sizeof %d\n", sizeof(long long));
-	printf("\tfloat: sizeof %d\n", sizeof(float));
-	printf("\tdouble: sizeof %d\n", sizeof(double));
+	printf("\tchar: sizeof %zu\n", sizeof(char));
+	printf("\tint: sizeof %zu\n", sizeof(int));
+	printf("\tshort: sizeof %zu\n", sizeof(short));
+	printf("\tlong: sizeof %zu\n", sizeof(long));
+	printf("\tlong long: sizeof %zu\n", sizeof(long long));
+	printf("\tfloat: sizeof %zu\n", sizeof(float));
+	printf("\tdouble: sizeof %zu\n", sizeof(double));
 
 	printf("voici les valeurs de mes variables:\n");
 	printf("\tchar - val: %d\n", c);
