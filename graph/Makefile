@@ -1,14 +1,11 @@
-# Project: Graphes1
-# Makefile created by Dev-C++ 5.5.1
+# Project: Graph
 
 CPP      = g++.exe
 CC       = gcc.exe
-WINDRES  = windres.exe
+
 OBJ      = mainGraphes1.o
 LINKOBJ  = mainGraphes1.o
-LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/lib" -static-libstdc++ -static-libgcc
-INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include"
-CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++"
+
 BIN      = Graphes1.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 

@@ -91,15 +91,15 @@ Dlist *dlist_append(Dlist *p_list, int data)
         p_list->p_head = p_new; /*On fait pointer la t�te de liste vers le nouvel �l�ment*/
         p_list->p_tail = p_new; /*On fait pointer la fin de liste vers le nouvel �l�ment*/
       }
-      else /*Cas o� des �l�ments sont d�j� pr�sents dans notre liste*/
+      else /*Cas ou des elements sont deja presents dans notre liste*/
       {
-        p_new->data = data;             /*On'enregistre'notredonn�e*/
+        p_new->data = data;             /*On enregistre notre donnee*/
         p_new->p_next = NULL;           /*Onfaitpointerp_nextversNULL*/
         p_list->p_tail->p_next = p_new; /*On relie le dernier �l�ment de la liste vers notre nouvel �l�ment*/
         p_new->p_prev = p_list->p_tail; /*On fait pointer p_prev vers le dernier �l�ment de la liste*/
         p_list->p_tail = p_new;         /*On fait pointer la fin de liste vers notre nouvel  �l�ment*/
       }
-      p_list->length++; /*Incr�mentation de la taille de la liste*/
+      p_list->length++; /*Incrementation de la taille de la liste*/
     }
   }
   return p_list; /*on retourne notre nouvelle liste*/
@@ -135,7 +135,7 @@ Dlist *dlist_prepend(Dlist *p_list, int data)
   return p_list;
 }
 
-// Suppression d�un �l�ment de la liste selon sa valeur
+// Suppression d'un element de la liste selon sa valeur
 Dlist *dlist_remove(Dlist *p_list, int data)
 {
   if (p_list != NULL)
