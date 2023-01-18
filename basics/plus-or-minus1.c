@@ -3,10 +3,12 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define MAX 100
+#define MIN 1
+
 int main()
 {
     int nombreMystere = 0, saisie = 0;
-    const int MAX = 100, MIN = 1;
 
     srand(time(NULL)); //generation du nombreMystere
     nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
